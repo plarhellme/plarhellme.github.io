@@ -16,7 +16,7 @@ body {
   height: 100%;
   border-right: solid;
   border-color: rgba(0, 22, 22, 0.4);
-  background-color: #242424;
+  background-color: rgb(54, 54, 54);
 }
 
 h2 {
@@ -223,8 +223,4 @@ img {vertical-align: middle;}
 .site-footer {
   background-color: #303030;
   color:#cccccc;
-}
-
-.sidebar {
-  background-color: #242424;
 }
