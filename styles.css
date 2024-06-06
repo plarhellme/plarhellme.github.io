@@ -1,4 +1,4 @@
-html,
+  html,
 body {
   min-width: 290px;
   color: #4d4e53;
@@ -222,5 +222,9 @@ img {vertical-align: middle;}
 
 .site-footer {
   background-color: #303030;
-  color:#cccccc
+  color:#cccccc;
+}
+
+.sidebar {
+  background-color: #242424;
 }
