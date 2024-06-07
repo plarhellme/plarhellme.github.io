@@ -95,23 +95,10 @@ table {
   border-collapse: collapse;
 }
 
-@media only screen and (max-width: 815px) {
-  /* For mobile phones: */
-  #sidebar ul {
-    border: 1px solid;
-    height: 207px;
-  }
-
 #documentation {
 position: relative;
 margin-left: 0px;
 margin-top: 270px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #documentation {
-    margin-left: 0px;
   }
 }
 
