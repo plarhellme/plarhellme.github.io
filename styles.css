@@ -1,0 +1,460 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .kanit-extrabold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .kanit-thin-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .kanit-extralight-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .kanit-light-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .kanit-regular-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .kanit-medium-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .kanit-semibold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .kanit-bold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .kanit-extrabold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .kanit-black-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+/* Apply a global font */
+body {
+    font-family: 'Kanit', sans-serif; /* Replace 'Sarabun' with your desired font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Ensure headers and other elements inherit the font */
+h1, h2, h3, p, a, button, input, textarea {
+    font-family: inherit;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin: 10px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Carousel Styles */
+.carousel {
+    width: 80%;
+    height: 60%; /* Set height to 60% */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+    width: 100%;
+    height: 100%; /* Match the height of the carousel */
+}
+
+.carousel-images img {
+    width: 100%; /* Ensure the image fills the carousel width */
+    height: 720px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.carousel-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    nav a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .carousel {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .carousel {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        margin: 0 5px;
+        font-size: 12px;
+    }
+
+    header {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 5px;
+    }
+
+    .carousel {
+        max-width: 100%;
+        border: none;
+    }
+
+    .carousel-buttons button {
+        padding: 8px;
+    }
+}
+
+@keyframes fadeInLeftToRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade-in from down to up */
+.fade-in-text {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.fade-in-text.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+.parallax-header {
+    background-image: url('imgsrc/Mystical\ Waterfall\ Landscape.jpeg'); /* Replace with your image path */
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.parallax-header .header-content {
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.parallax-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header-logo {
+    width: 200px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 10px; /* Add spacing between the logo and the title */
+    border-radius: 10%;
+}
+
+.goods-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.goods-item {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.goods-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.goods-item h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.goods-item p {
+    padding: 0 10px 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.fade-in-div {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Initial position */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.fade-in-div.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Final position */
+}
+
+.fade-in-text, .fade-in-div {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Initial position */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-text {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+#map {
+    padding: 20px;
+    text-align: center;
+}
+
+.map-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plain-text {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
